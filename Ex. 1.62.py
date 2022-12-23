@@ -23,7 +23,7 @@ color = [] #winner color
 divide = [] #winner divide
 numbering = [] #winner numbering
 
-def Game():
+def game():
     """imitation game"""
 #Red of black
     if win_num in red_nums:
@@ -46,7 +46,7 @@ def Game():
     print ("The bet won: " + "".join(divide))
     print ("The bet won: " + "".join(numbering))
 
-def Zero():
+def zero():
     """search for zeros"""
     if win_num==00:
         print ("On table: " + str(win_num))
@@ -57,6 +57,6 @@ def Zero():
         print ("The bet won: " + str(win_num))
         exit()
     if win_num>0:
-        Game()
+        game()
 
-Zero()
+zero()
